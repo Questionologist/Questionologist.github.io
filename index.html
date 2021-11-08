@@ -200,7 +200,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-11-08 15:23:00" itemprop="dateModified" datetime="2021-11-08T15:23:00+08:00">2021-11-08</time>
+        <time title="修改时间：2021-11-08 15:41:56" itemprop="dateModified" datetime="2021-11-08T15:41:56+08:00">2021-11-08</time>
       </span>
 
   
@@ -213,10 +213,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="Hexo-Admin-Auto-Deploy-Test"><a href="#Hexo-Admin-Auto-Deploy-Test" class="headerlink" title="Hexo-Admin Auto Deploy Test"></a>Hexo-Admin Auto Deploy Test</h1><p>第一篇真正意义上用hexo-admin插件deploy的文章，也当作一个测试吧.<br>花了一天时间搭完了node.js和hexo框架。但发现这玩意儿居然没有后台管理系统，但是好在GitHub有大佬写出了Hexo-Admin插件，这样就有了个图形化的管理系统，要不用Vim写要崩溃了。安装完之后配置好用户名密码但是最后却卡在了Auto-Deploy这一个功能上，其实这个功能并不是必须，不用这个也可以在Terminal里面手动打 hexo deploy进行部署。这在之前还好，但今年8月31号的GitHub更新放弃了SSH密匙，转而使用令牌，所以每次Deploy要重新输入，很麻烦。那这样的话就失去了我使用Admin插件的意义，还是必须回到Terminal上面操作。</p>
-<p>一开始点Deploy的时候显示的是生成Hexo-deploy Shell文件（大概是这个意思，为啥我不清楚）。于是我去网上找解决方法，发现要在源文件里提前写好配置文件。但是查到了很多种不同的写法，我尝试了均以失败告终。今天我上Guthub搜了一下，在这个插件的issue模块找到了另一种写法，我抱着试一试的心理写了一下，没想到居然成功了（准确说是成功一半）。运行完之后现实无法连接到我的仓库。我思考了一下，他在deploy的时候也没找我询问密码和用户名，SSH密钥也用不了，大概是我在描述文件里面没有写。于是我又查了一下，发现要在 config里面的repo网址里面按照特定的格式添加密码（现为令牌）和用户名。我照着上面的格式修改了文件，然后再试了一遍，成功了，文件已经全部部署上去了。也就是你们现在看到的这篇文章。</p>
-<p>我有时间会把我在搭建这个博客的时候遇到的坑和问题写个总结，也会从头到脚魔改NeXt主题，美化一下。不过这些都是后话，毕竟这个网站才存在了两天。</p>
-
+          <h1 id="Hexo-Admin-Auto-Deploy-Test"><a href="#Hexo-Admin-Auto-Deploy-Test" class="headerlink" title="Hexo-Admin Auto Deploy Test"></a>Hexo-Admin Auto Deploy Test</h1><p>第一篇真正意义上用hexo-admin插件deploy的文章，也当作一个测试吧.<br>花了一天时间搭完了node.js和hexo框架。但发现这玩意儿居然没有后台管理系统，但是好在GitHub有大佬写出了Hexo-Admin插件，这样就有了个图形化的管理系统，要不用Vim写要崩溃了。
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/11/07/My-first-Post/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -266,8 +271,15 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2021-11-07 14:27:55" itemprop="dateCreated datePublished" datetime="2021-11-07T14:27:55+08:00">2021-11-07</time>
+      <time title="创建时间：2021-11-07 15:42:00" itemprop="dateCreated datePublished" datetime="2021-11-07T15:42:00+08:00">2021-11-07</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-11-08 15:43:38" itemprop="dateModified" datetime="2021-11-08T15:43:38+08:00">2021-11-08</time>
+      </span>
 
   
 </div>
@@ -280,19 +292,14 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/11/07/hello-world/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -333,6 +340,7 @@
   </footer>
 
   
+  <script size="300" alpha="0.6" zIndex="-1" src="https://cdn.jsdelivr.net/npm/ribbon.js@1.0.2/dist/ribbon.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
